@@ -1,0 +1,5 @@
+1291748526
+Application	/home/roberto/Desktop/rails/ejemplo1/config/application.rb	  class Application 
+ApplicationController	/home/roberto/Desktop/rails/ejemplo1/app/controllers/application_controller.rb	class ApplicationController 
+ApplicationHelper	/home/roberto/Desktop/rails/ejemplo1/app/helpers/application_helper.rb	module ApplicationHelper
+Ejemplo1	/home/roberto/Desktop/rails/ejemplo1/config/application.rb	module Ejemplo1
