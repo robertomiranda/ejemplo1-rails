@@ -1,5 +1,4 @@
 Ejemplo1::Application.routes.draw do
-  
   #match "posts" => "posts#index", :via => :get
   #match "posts/:id" => "posts#show", :via => :get
   #match "posts/:id/edit" => "posts#edit", :via => :get
@@ -7,7 +6,11 @@ Ejemplo1::Application.routes.draw do
   #match "posts/new" => "posts#new", :via => :get
   #match "posts" => "posts#create", :via => :post
   #match "posts/:id" => "posts#destroy", :via => :delete
-  resources :posts 
+  resources :posts do
+    resources :comments, :only => [:create, :destroy]
+  end
+  
+  root :to => "posts#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -58,7 +61,6 @@ Ejemplo1::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => "welcome#index"
 
   # See how all your routes lay out with "rake routes"
 

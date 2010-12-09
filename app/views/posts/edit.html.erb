@@ -50,10 +50,11 @@
 </script>
 <!-- /TinyMCE -->
 <h1>Posts#edit</h1>
+
 <%= form_for @post do |f| %>
   <%= f.label :title %><br />
   <%= f.text_field :title, :class => "clase" %><br />
   <%= f.label :content %><br />
   <%= f.text_area :content %>
-  <%= submit_tag "Create" %>
+  <%= submit_tag "Edit" %>
 <% end %>
