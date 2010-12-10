@@ -1,10 +1,16 @@
 Ejemplo1::Application.routes.draw do
   #match "posts" => "posts#index", :via => :get
+
   #match "posts/:id" => "posts#show", :via => :get
+
   #match "posts/:id/edit" => "posts#edit", :via => :get
+
   #match "posts/:id" => "posts#update", :via => :put
+
   #match "posts/new" => "posts#new", :via => :get
+
   #match "posts" => "posts#create", :via => :post
+
   #match "posts/:id" => "posts#destroy", :via => :delete
   resources :posts do
     resources :comments, :only => [:create, :destroy]
